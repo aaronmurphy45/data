@@ -1,0 +1,79 @@
+2022-05-05 12:10:34.398 UTC,,,1324,,6273beba.52c,1,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"ending log output to stderr",,"Future log output will go to log destination ""csvlog"".",,,,,,,"","postmaster",,0
+2022-05-05 12:10:34.398 UTC,,,1324,,6273beba.52c,2,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0, 64-bit",,,,,,,,,"","postmaster",,0
+2022-05-05 12:10:34.398 UTC,,,1324,,6273beba.52c,3,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"listening on IPv4 address ""0.0.0.0"", port 5432",,,,,,,,,"","postmaster",,0
+2022-05-05 12:10:34.398 UTC,,,1324,,6273beba.52c,4,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"listening on IPv6 address ""::"", port 5432",,,,,,,,,"","postmaster",,0
+2022-05-05 12:10:34.410 UTC,,,1324,,6273beba.52c,5,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"listening on Unix socket ""/tmp/.s.PGSQL.5432""",,,,,,,,,"","postmaster",,0
+2022-05-05 12:10:34.420 UTC,,,1329,,6273beba.531,1,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"database system was shut down at 2022-05-05 12:08:24 UTC",,,,,,,,,"","startup",,0
+2022-05-05 12:10:34.439 UTC,,,1324,,6273beba.52c,6,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,"","postmaster",,0
+2022-05-05 12:22:51.682 UTC,"postgres","postgres",1584,"192.168.56.1:52419",6273c19b.630,1,"idle",2022-05-05 12:22:51 UTC,3/26,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:22:51.693 UTC,"postgres","postgres",1584,"192.168.56.1:52419",6273c19b.630,2,"idle",2022-05-05 12:22:51 UTC,3/27,0,LOG,00000,"statement: CREATE EXTENSION pg_cron;
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:22:51.718 UTC,"postgres","postgres",1584,"192.168.56.1:52419",6273c19b.630,3,"CREATE EXTENSION",2022-05-05 12:22:51 UTC,3/27,852,ERROR,42704,"unrecognized configuration parameter ""cron.database_name""",,,,,"PL/pgSQL function inline_code_block line 3 at IF","CREATE EXTENSION pg_cron;
+",,,"","client backend",,0
+2022-05-05 12:23:58.749 UTC,"postgres","postgres",1587,"192.168.56.1:52437",6273c1de.633,1,"idle",2022-05-05 12:23:58 UTC,3/31,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:23:58.753 UTC,"postgres","postgres",1587,"192.168.56.1:52437",6273c1de.633,2,"idle",2022-05-05 12:23:58 UTC,3/32,0,LOG,00000,"statement: SELECT * FROM pg_database;
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:25:50.717 UTC,"postgres","postgres",1636,"192.168.56.1:52450",6273c24e.664,1,"idle",2022-05-05 12:25:50 UTC,3/38,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:25:50.719 UTC,"postgres","postgres",1636,"192.168.56.1:52450",6273c24e.664,2,"idle",2022-05-05 12:25:50 UTC,3/39,0,LOG,00000,"statement: SELECT pg_reload_conf();
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:25:50.721 UTC,,,1324,,6273beba.52c,7,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"received SIGHUP, reloading configuration files",,,,,,,,,"","postmaster",,0
+2022-05-05 12:25:50.722 UTC,,,1324,,6273beba.52c,8,,2022-05-05 12:10:34 UTC,,0,LOG,55P02,"parameter ""shared_preload_libraries"" cannot be changed without restarting the server",,,,,,,,,"","postmaster",,0
+2022-05-05 12:25:50.722 UTC,,,1324,,6273beba.52c,9,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"parameter ""cron.database_name"" changed to ""humanresources""",,,,,,,,,"","postmaster",,0
+2022-05-05 12:25:50.722 UTC,,,1324,,6273beba.52c,10,,2022-05-05 12:10:34 UTC,,0,LOG,F0000,"configuration file ""/usr/local/pgsql/data/postgresql.conf"" contains errors; unaffected changes were applied",,,,,,,,,"","postmaster",,0
+2022-05-05 12:25:56.359 UTC,"postgres","postgres",1636,"192.168.56.1:52450",6273c24e.664,3,"idle",2022-05-05 12:25:50 UTC,3/40,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:25:56.365 UTC,"postgres","postgres",1636,"192.168.56.1:52450",6273c24e.664,4,"idle",2022-05-05 12:25:50 UTC,3/41,0,LOG,00000,"statement: CREATE EXTENSION pg_cron;
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:25:56.383 UTC,"postgres","postgres",1636,"192.168.56.1:52450",6273c24e.664,5,"CREATE EXTENSION",2022-05-05 12:25:50 UTC,3/41,853,ERROR,P0001,"can only create extension in database humanresources","Jobs must be scheduled from the database configured in cron.database_name, since the pg_cron background worker reads job descriptions from this database.","Add cron.database_name = 'postgres' in postgresql.conf to use the current database.",,,"PL/pgSQL function inline_code_block line 4 at RAISE","CREATE EXTENSION pg_cron;
+",,,"","client backend",,0
+2022-05-05 12:26:46.659 UTC,"postgres","postgres",1639,"192.168.56.1:52454",6273c286.667,1,"idle",2022-05-05 12:26:46 UTC,3/43,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:26:46.660 UTC,"postgres","postgres",1639,"192.168.56.1:52454",6273c286.667,2,"idle",2022-05-05 12:26:46 UTC,3/44,0,LOG,00000,"statement: SELECT pg_reload_conf();
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:26:46.660 UTC,,,1324,,6273beba.52c,11,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"received SIGHUP, reloading configuration files",,,,,,,,,"","postmaster",,0
+2022-05-05 12:26:46.661 UTC,,,1324,,6273beba.52c,12,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"parameter ""cron.database_name"" removed from configuration file, reset to default",,,,,,,,,"","postmaster",,0
+2022-05-05 12:26:46.661 UTC,,,1324,,6273beba.52c,13,,2022-05-05 12:10:34 UTC,,0,LOG,55P02,"parameter ""shared_preload_libraries"" cannot be changed without restarting the server",,,,,,,,,"","postmaster",,0
+2022-05-05 12:26:46.661 UTC,,,1324,,6273beba.52c,14,,2022-05-05 12:10:34 UTC,,0,LOG,F0000,"configuration file ""/usr/local/pgsql/data/postgresql.conf"" contains errors; unaffected changes were applied",,,,,,,,,"","postmaster",,0
+2022-05-05 12:26:51.948 UTC,"postgres","postgres",1639,"192.168.56.1:52454",6273c286.667,3,"idle",2022-05-05 12:26:46 UTC,3/45,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:26:51.957 UTC,"postgres","postgres",1639,"192.168.56.1:52454",6273c286.667,4,"idle",2022-05-05 12:26:46 UTC,3/46,0,LOG,00000,"statement: CREATE EXTENSION pg_cron;
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:26:51.960 UTC,"postgres","postgres",1639,"192.168.56.1:52454",6273c286.667,5,"CREATE EXTENSION",2022-05-05 12:26:46 UTC,3/46,854,ERROR,P0001,"can only create extension in database ","Jobs must be scheduled from the database configured in cron.database_name, since the pg_cron background worker reads job descriptions from this database.","Add cron.database_name = 'postgres' in postgresql.conf to use the current database.",,,"PL/pgSQL function inline_code_block line 4 at RAISE","CREATE EXTENSION pg_cron;
+",,,"","client backend",,0
+2022-05-05 12:27:29.994 UTC,"postgres","postgres",1641,"192.168.56.1:52458",6273c2b1.669,1,"idle",2022-05-05 12:27:29 UTC,3/48,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:27:29.995 UTC,"postgres","postgres",1641,"192.168.56.1:52458",6273c2b1.669,2,"idle",2022-05-05 12:27:29 UTC,3/49,0,LOG,00000,"statement: SELECT pg_reload_conf();
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:27:29.995 UTC,,,1324,,6273beba.52c,15,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"received SIGHUP, reloading configuration files",,,,,,,,,"","postmaster",,0
+2022-05-05 12:27:29.996 UTC,,,1324,,6273beba.52c,16,,2022-05-05 12:10:34 UTC,,0,LOG,55P02,"parameter ""shared_preload_libraries"" cannot be changed without restarting the server",,,,,,,,,"","postmaster",,0
+2022-05-05 12:27:29.996 UTC,,,1324,,6273beba.52c,17,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"parameter ""cron.database_name"" changed to ""postgres""",,,,,,,,,"","postmaster",,0
+2022-05-05 12:27:29.996 UTC,,,1324,,6273beba.52c,18,,2022-05-05 12:10:34 UTC,,0,LOG,F0000,"configuration file ""/usr/local/pgsql/data/postgresql.conf"" contains errors; unaffected changes were applied",,,,,,,,,"","postmaster",,0
+2022-05-05 12:27:34.357 UTC,"postgres","postgres",1641,"192.168.56.1:52458",6273c2b1.669,3,"idle",2022-05-05 12:27:29 UTC,3/50,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:27:34.362 UTC,"postgres","postgres",1641,"192.168.56.1:52458",6273c2b1.669,4,"idle",2022-05-05 12:27:29 UTC,3/51,0,LOG,00000,"statement: CREATE EXTENSION pg_cron;
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:27:34.437 UTC,"postgres","postgres",1641,"192.168.56.1:52458",6273c2b1.669,5,"CREATE EXTENSION",2022-05-05 12:27:29 UTC,3/51,855,ERROR,XX000,"pg_cron can only be loaded via shared_preload_libraries",,"Add pg_cron to the shared_preload_libraries configuration variable in postgresql.conf.",,,,"CREATE EXTENSION pg_cron;
+",,,"","client backend",,0
+2022-05-05 12:37:46.012 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,1,"idle",2022-05-05 12:37:45 UTC,3/73,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:37:46.014 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,2,"idle",2022-05-05 12:37:45 UTC,3/74,0,LOG,00000,"statement: SELECT pg_reload_conf();
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:37:46.014 UTC,,,1324,,6273beba.52c,19,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"received SIGHUP, reloading configuration files",,,,,,,,,"","postmaster",,0
+2022-05-05 12:37:46.015 UTC,,,1324,,6273beba.52c,20,,2022-05-05 12:10:34 UTC,,0,LOG,55P02,"parameter ""shared_preload_libraries"" cannot be changed without restarting the server",,,,,,,,,"","postmaster",,0
+2022-05-05 12:37:46.015 UTC,,,1324,,6273beba.52c,21,,2022-05-05 12:10:34 UTC,,0,LOG,F0000,"configuration file ""/usr/local/pgsql/data/postgresql.conf"" contains errors; unaffected changes were applied",,,,,,,,,"","postmaster",,0
+2022-05-05 12:37:49.326 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,3,"idle",2022-05-05 12:37:45 UTC,3/75,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:37:49.333 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,4,"idle",2022-05-05 12:37:45 UTC,3/76,0,LOG,00000,"statement: CREATE EXTENSION pg_cron;
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:37:49.351 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,5,"CREATE EXTENSION",2022-05-05 12:37:45 UTC,3/76,856,ERROR,XX000,"pg_cron can only be loaded via shared_preload_libraries",,"Add pg_cron to the shared_preload_libraries configuration variable in postgresql.conf.",,,,"CREATE EXTENSION pg_cron;
+",,,"","client backend",,0
+2022-05-05 12:37:53.032 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,6,"idle",2022-05-05 12:37:45 UTC,3/77,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:37:53.040 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,7,"idle",2022-05-05 12:37:45 UTC,3/78,0,LOG,00000,"statement: CREATE EXTENSION pgaudit;
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:37:53.040 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,8,"CREATE EXTENSION",2022-05-05 12:37:45 UTC,3/78,0,ERROR,42710,"extension ""pgaudit"" already exists",,,,,,"CREATE EXTENSION pgaudit;
+",,,"","client backend",,0
+2022-05-05 12:37:57.026 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,9,"idle",2022-05-05 12:37:45 UTC,3/79,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-05 12:37:57.047 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,10,"idle",2022-05-05 12:37:45 UTC,3/80,0,LOG,00000,"statement: CREATE EXTENSION pg_cron;
+",,,,,,,,,"","client backend",,0
+2022-05-05 12:37:57.056 UTC,"postgres","postgres",1668,"192.168.56.1:52487",6273c519.684,11,"CREATE EXTENSION",2022-05-05 12:37:45 UTC,3/80,857,ERROR,XX000,"pg_cron can only be loaded via shared_preload_libraries",,"Add pg_cron to the shared_preload_libraries configuration variable in postgresql.conf.",,,,"CREATE EXTENSION pg_cron;
+",,,"","client backend",,0
+2022-05-05 12:50:47.115 UTC,,,1324,,6273beba.52c,22,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"received SIGHUP, reloading configuration files",,,,,,,,,"","postmaster",,0
+2022-05-05 12:50:47.116 UTC,,,1324,,6273beba.52c,23,,2022-05-05 12:10:34 UTC,,0,LOG,55P02,"parameter ""shared_preload_libraries"" cannot be changed without restarting the server",,,,,,,,,"","postmaster",,0
+2022-05-05 12:50:47.116 UTC,,,1324,,6273beba.52c,24,,2022-05-05 12:10:34 UTC,,0,LOG,F0000,"configuration file ""/usr/local/pgsql/data/postgresql.conf"" contains errors; unaffected changes were applied",,,,,,,,,"","postmaster",,0
+2022-05-05 12:50:47.116 UTC,,,1324,,6273beba.52c,25,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"received smart shutdown request",,,,,,,,,"","postmaster",,0
+2022-05-05 12:50:47.136 UTC,,,1324,,6273beba.52c,26,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"background worker ""logical replication launcher"" (PID 1335) exited with exit code 1",,,,,,,,,"","postmaster",,0
+2022-05-05 12:50:47.136 UTC,,,1330,,6273beba.532,1,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"shutting down",,,,,,,,,"","checkpointer",,0
+2022-05-05 12:50:47.173 UTC,,,1324,,6273beba.52c,27,,2022-05-05 12:10:34 UTC,,0,LOG,00000,"database system is shut down",,,,,,,,,"","postmaster",,0

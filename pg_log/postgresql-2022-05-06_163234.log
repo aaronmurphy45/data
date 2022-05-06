@@ -1,0 +1,2 @@
+2022-05-06 16:32:34.701 UTC [1374] LOG:  ending log output to stderr
+2022-05-06 16:32:34.701 UTC [1374] HINT:  Future log output will go to log destination "csvlog".

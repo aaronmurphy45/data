@@ -1,0 +1,17 @@
+2022-05-06 16:32:34.701 UTC,,,1374,,62754da2.55e,1,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"ending log output to stderr",,"Future log output will go to log destination ""csvlog"".",,,,,,,"","postmaster",,0
+2022-05-06 16:32:34.701 UTC,,,1374,,62754da2.55e,2,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0, 64-bit",,,,,,,,,"","postmaster",,0
+2022-05-06 16:32:34.701 UTC,,,1374,,62754da2.55e,3,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"listening on IPv4 address ""0.0.0.0"", port 5432",,,,,,,,,"","postmaster",,0
+2022-05-06 16:32:34.701 UTC,,,1374,,62754da2.55e,4,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"listening on IPv6 address ""::"", port 5432",,,,,,,,,"","postmaster",,0
+2022-05-06 16:32:34.704 UTC,,,1374,,62754da2.55e,5,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"listening on Unix socket ""/tmp/.s.PGSQL.5432""",,,,,,,,,"","postmaster",,0
+2022-05-06 16:32:34.715 UTC,,,1379,,62754da2.563,1,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"database system was interrupted; last known up at 2022-05-06 16:25:51 UTC",,,,,,,,,"","startup",,0
+2022-05-06 16:32:35.067 UTC,,,1379,,62754da2.563,2,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"redo starts at 0/7000028",,,,,,,,,"","startup",,0
+2022-05-06 16:32:35.073 UTC,,,1379,,62754da2.563,3,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"invalid record length at 0/9000060: wanted 24, got 0",,,,,,,,,"","startup",,0
+2022-05-06 16:32:35.073 UTC,,,1379,,62754da2.563,4,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"redo done at 0/9000028 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s",,,,,,,,,"","startup",,0
+2022-05-06 16:32:35.138 UTC,,,1374,,62754da2.55e,6,,2022-05-06 16:32:34 UTC,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,"","postmaster",,0
+2022-05-06 16:32:35.228 UTC,,,1386,,62754da3.56a,1,,2022-05-06 16:32:35 UTC,1/0,0,LOG,00000,"pg_cron scheduler started",,,,,,,,,"","pg_cron launcher",,0
+2022-05-06 16:32:43.267 UTC,"postgres","postgres",1388,"192.168.56.1:57579",62754dab.56c,1,"idle",2022-05-06 16:32:43 UTC,4/2,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-06 16:32:43.270 UTC,"postgres","postgres",1388,"192.168.56.1:57579",62754dab.56c,2,"idle",2022-05-06 16:32:43 UTC,4/3,0,LOG,00000,"statement:     SELECT pg_start_backup('test backup', true);
+",,,,,,,,,"","client backend",,0
+2022-05-06 16:33:30.030 UTC,"postgres","postgres",1402,"192.168.56.1:57582",62754dd9.57a,1,"idle",2022-05-06 16:33:29 UTC,4/5,0,LOG,00000,"statement: SELECT pg_backend_pid() AS pid",,,,,,,,,"","client backend",,0
+2022-05-06 16:33:30.031 UTC,"postgres","postgres",1402,"192.168.56.1:57582",62754dd9.57a,2,"idle",2022-05-06 16:33:29 UTC,4/6,0,LOG,00000,"statement:     SELECT pg_stop_backup();
+",,,,,,,,,"","client backend",,0
